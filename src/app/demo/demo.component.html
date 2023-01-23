@@ -1,0 +1,6 @@
+<h1>Gapple Pay</h1>
+<p><b>Checkout ID:</b>{{ checkoutID }}</p>
+
+<ng-container *ngIf="!!checkoutID">
+  <form action="http://localhost:4200/redirect" class="paymentWidgets" data-brands="GOOGLEPAY"></form>
+</ng-container>
